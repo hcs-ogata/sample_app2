@@ -1,5 +1,6 @@
 SampleApp2::Application.routes.draw do
   root :to => 'Pages#index'
+  get"content",to:"pages#content", as: :content
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
