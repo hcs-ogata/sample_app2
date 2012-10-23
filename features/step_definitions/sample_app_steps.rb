@@ -5,6 +5,6 @@
   visit'/'
 end
 
-ならば /^"(.＊?)"と表示されること$/ do |text|
+ならば /^"(.*?)"と表示していること$/ do |text|
   page.should have_content(text)
 end
